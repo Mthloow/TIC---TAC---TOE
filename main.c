@@ -2,8 +2,6 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdbool.h>
-#include <unistd.h>
-
 
 void plateau_morpion(char plateau[]){
     printf("%c  | %c | %c\n", plateau[0], plateau[1], plateau[2]);
@@ -29,7 +27,6 @@ bool combinaison_victoire(char plateau[]){
     }
     return false;
 }
-
 
 bool verification_plateau(char plateau[]){
 
@@ -68,9 +65,6 @@ void tour_joueur(char plateau[]){
 
     plateau[placement_joueur] = 'O';
 }
-
- 
-
 
 int main(){
     char plateau[9] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
